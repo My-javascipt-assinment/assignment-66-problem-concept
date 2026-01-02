@@ -1,8 +1,76 @@
 /*==================================== Question No 1 =========================================
-
+find missing number from array
 ======================================= Answer =====================================*/
+// let arr = [1,3,4,5,6,7,8];
+// let missingNumber = '';
+// for(let i = 1 ; i <=8;i++){
+// if(arr.indexOf(i) === -1){
+//     // console.log(i)
+//     missingNumber = missingNumber + i
+// }
+// }
+
+// console.log(missingNumber)
+
+/* let arr = [1,3,4,5,6,7,8];
+let missing = '';
+for(let i = 1; i <= 8; i++){
+    if(arr.indexOf(i) == -1){
+        // console.log(i);
+        missing = missing + i
+    }
+}
+
+console.log(missing)
+ */
 
 
+/* let arr = [1,3,4,5,6,7,8];
+let missing = '';
+function finder(array){
+    for(let i = 1;i<= 8;i++){
+        if(array.indexOf(i) == -1){
+            missing = missing + i
+        }
+
+    }
+     
+}
+finder(arr)
+console.log(missing)*/
+
+
+/*==================================== Question No 2 =========================================
+reverse string
+======================================= Answer =====================================*/
+/* let str = 'maim';
+let reverse = '';
+function reversing(text){
+for(let i = text.length-1;i >=0;i--){
+    console.log(text[i]);
+    reverse = reverse + text[i];
+    
+}
+if(text == reverse){
+        return('palindrome')
+    }
+    else{return('not palindrome')}
+}
+let ans = reversing(str)
+console.log(reverse)
+console.log(ans)
+ */
+
+/*==================================== Question No 3 =========================================
+print table
+======================================= Answer =====================================*/
+/* 
+let num = 5;
+for(let i = 1;i<=10;i++){
+    console.log(`${num}*${i} = ${num * i}`)
+}
+    */
+   
 
 
 
@@ -14,41 +82,71 @@
 
 
 
-/*==================================== Question No 1 =========================================
 
+
+/*==================================== Question No 4 =========================================
+anagram
 ======================================= Answer =====================================*/
+// function isAnagram(a,b){
+//     return(
+//         a.split('').sort().join() === b.split('').sort().join()
+//     )
+// }
+// console.log(isAnagram('listen','silent'))
+// console.log(isAnagram('eat','tea')) 
 
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
+/* function isAnagram(a,b){
+    return(
+        a.split('').sort().join() == b.split('').sort().join()
+    )
+}
+let ans = (isAnagram('listen','silent'))
+console.log(ans) */
 
 
 /*==================================== Question No 1 =========================================
 
 ======================================= Answer =====================================*/
+/*let str = 'A lazy dog jumps over the fox';
+str = str.replaceAll(' ','');
+str = str.toLowerCase();
+console.log(str,str.length)
+let vowel = '';
+let consonants = '';
+for(let i = 0;i < str.length;i++){
+    if(str[i] === 'a'|| str[i] === 'e'||str[i] === 'i' || str[i] === 'o' || str[i] === 'u')
+    {
+        vowel = vowel + str[i]
+    }
+    else{
+        consonants = consonants + str[i]
+    }
+}
+console.log(vowel);
+console.log(consonants);
+let vowelLength = vowel.length;
+let consonantsLength = consonants.length;
+console.log(vowelLength);
+console.log(consonantsLength)
+*/
 
+let str = 'A lazy dog jumps over the fox';
+   console.log(str,str.length)
+str = str.replaceAll(' ','');
+console.log(str,str.length);
+str = str.toLowerCase();
+console.log(str);
+let constant = '';
+let vowel = '';
+function find(str){
+    for(let i = 0; i < str.length;i++){
+        if(str[i] === 'a'
 
+        )
+    }
 
-
+}
+find(str)
 
 
 
