@@ -104,33 +104,13 @@ let ans = (isAnagram('listen','silent'))
 console.log(ans) */
 
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 5 =========================================
+constant and vowels
 ======================================= Answer =====================================*/
-/*let str = 'A lazy dog jumps over the fox';
-str = str.replaceAll(' ','');
-str = str.toLowerCase();
-console.log(str,str.length)
-let vowel = '';
-let consonants = '';
-for(let i = 0;i < str.length;i++){
-    if(str[i] === 'a'|| str[i] === 'e'||str[i] === 'i' || str[i] === 'o' || str[i] === 'u')
-    {
-        vowel = vowel + str[i]
-    }
-    else{
-        consonants = consonants + str[i]
-    }
-}
-console.log(vowel);
-console.log(consonants);
-let vowelLength = vowel.length;
-let consonantsLength = consonants.length;
-console.log(vowelLength);
-console.log(consonantsLength)
-*/
 
-let str = 'A lazy dog jumps over the fox';
+
+// let str = 'A lazy dog jumps over the fox'; 
+/* let str = 'love'
    console.log(str,str.length)
 str = str.replaceAll(' ','');
 console.log(str,str.length);
@@ -140,13 +120,61 @@ let constant = '';
 let vowel = '';
 function find(str){
     for(let i = 0; i < str.length;i++){
-        if(str[i] === 'a'
-
-        )
+        if(str[i] === 'a'||str[i] === 'e' ||str[i] === 'i' ||str[i] === 'o' ||str[i] === 'u'){
+            vowel = vowel + str[i]
+        }
+        else{
+            constant = constant + str[i]
+        }
     }
 
 }
 find(str)
+console.log(vowel)
+console.log(constant)
+ */
+
+/*==================================== Question No 6 =========================================
+max number
+======================================= Answer =====================================*/
+/* let arr = [4,2,3,33,4,2,3];
+let max = arr[0]
+for(let i = 0;i< arr.length;i++){
+    if(arr[i] > max){
+        max= arr[i]
+    }
+}
+console.log(max)
+ */
+
+/*==================================== Question No 7 =========================================
+min number
+======================================= Answer =====================================*/
+/* let arr = [4,2,3,33,4,2,3];
+let min = arr[0];
+for(let i = 0;i < arr.length;i++){
+    if(arr[i] < min){
+        min = arr[i]
+    }
+}
+console.log(min)
+ */
+
+
+/*==================================== Question No 8 =========================================
+is vowel present in string
+======================================= Answer =====================================*/
+/* let str = 'ytU';
+str = str.toLowerCase()
+let check = (/[aeiou]/.test(str))
+console.log(check)
+if(/[aeiou]/.test(str)){
+    console.log('vowel is existend')
+}
+else{
+    console.log('vowel not existed')
+} */
+
 
 
 
@@ -158,62 +186,47 @@ find(str)
 
 
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 9 =========================================
+existence of element
 ======================================= Answer =====================================*/
+/* let arr = ['a','b','a','c','d','d','e'];
+let count = {};
+arr.forEach((item)=>{
+    if(count[item]){
+        count[item] = count[item] + 1
+    }
+    else{
+        count[item] = 1
+    }
+})
+console.log(count)
+ */
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 10 =========================================
+missing number
 ======================================= Answer =====================================*/
+/* let arr = [1,2,4,5,6,7,8];
+let missing = '';
+for(let i = 1;i <=8;i++){
+    if(arr.indexOf(i) == -1){
+        missing = missing + i
+    }
+}
+console.log(missing) */
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================*//*==================================== Question No 1 =========================================
-
+/*==================================== Question No 11 =========================================
+leap year
 ======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
+let year = 2005;
+if((year % 4 == 0 && year % 100 != 0)||(year % 400 == 0))
+{
+    console.log('leap year')
+}
+else{
+    console.log('not leap year')
+}
 
 
 /*==================================== Question No 1 =========================================
