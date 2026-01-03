@@ -219,7 +219,7 @@ console.log(missing) */
 /*==================================== Question No 11 =========================================
 leap year
 ======================================= Answer =====================================*/
-let year = 2005;
+/* let year = 2005;
 if((year % 4 == 0 && year % 100 != 0)||(year % 400 == 0))
 {
     console.log('leap year')
@@ -228,77 +228,166 @@ else{
     console.log('not leap year')
 }
 
+ */
+/*==================================== Question No 12 =========================================
+class in oop
+======================================= Answer =====================================*/
+ /* class Student {
+constructor(name,age,designation){this.name = name;
+  this.age = age;
+  this.designation = designation;
+}
+details(){return `My name is ${this.name} and my age is ${this.age} and my designation is ${this.designation}`}
+}
+const newStudent = new Student('Aziz',30,'Designer')
+console.log(newStudent);
+let ans = newStudent.details();
+console.log(ans) */
 
-/*==================================== Question No 1 =========================================
+/* class Student {
+    constructor(name,age,destination){
+        this.name = name;
+        this.age = age;
+        this.destination = destination
+        
+    }
+    details(){return `My name is ${this.name} and my age is ${this.age} and my destination is ${this.destination}`}
+}
+const newStudent = new Student('Aziz',30,'designer');
+console.log(newStudent)
+let ans = newStudent.details();
+console.log(ans)
+ */
 
+
+
+
+/*==================================== Question No 13 =========================================
+inheritance third pillar of oop
+======================================= Answer =====================================*/
+  /* class Student {
+  constructor (name){this.name = name;}
+}
+class Student2 extends Student {
+  constructor(name,age){super(name)
+    this.age = age}
+  show(){return `My name is ${this.name} and age is ${this.age}`}
+}
+const result = new Student2('Ahmed',30);
+let ans = result.show();
+console.log(ans)
+ */
+
+/* class Student {
+    constructor(name){
+        this.name = name;
+    }
+}
+
+ class Student2 extends Student {
+    constructor(name,age){
+        super(name)
+        this.age =age
+    }
+    show(){
+        return `My name is ${this.name} and my age is ${this.age}`
+    }
+ }
+let result = new Student2('ahmed',30)
+let ans = result.show();
+console.log(ans) */
+/*==================================== Question No 14 =========================================
+chek existence of item
+======================================= Answer =====================================*/
+/* let arr = ['a','b','b','a','a','c','d'];
+let count = {};
+arr.forEach((item)=>{
+    if(count[item]){
+        count[item] = count[item] + 1
+    }
+    else{count[item] = 1}
+})
+
+console.log(count) */
+
+
+/*==================================== Question No 15 =========================================
+flatten array
+======================================= Answer =====================================*/
+/* let arr = [1,[2,3],4,5,[6,7],8,[9]];
+let flat = [];
+for(let i = 0;i < arr.length;i++){
+    if(Array.isArray(arr[i])){
+        for(let j = 0;j < arr[i].length;j++){
+            flat.push(arr[i][j])
+        }
+    }
+    else{
+        flat.push(arr[i])
+    }
+}
+
+console.log(flat) */
+
+
+/*==================================== Question No 16 =========================================
+unique array
+======================================= Answer =====================================*/
+/* let arr = [1,2,2,3,4,3,3,4,5,6]
+let unique = [];
+for(let item of arr){
+    if(!unique.includes(item)){
+        unique.push(item)
+    }
+}
+console.log(unique) */
+
+
+/*==================================== Question No 17 =========================================
+missing number
+======================================= Answer =====================================*/
+/* let arr = [1,2,4,5,6,7,8,9]
+let missing = '';
+for(let i = 1;i <=9;i++){
+    if(arr.indexOf(i) == -1){
+        missing = missing + i
+    }
+}
+console.log(missing) */
+
+
+/*==================================== Question No 18 =========================================
+reverse string
+======================================= Answer =====================================*/
+/* let str = 'hello';
+let reverse = '';
+for(let i = str.length-1;i >=0;i--){
+    reverse = reverse + str[i]
+}
+
+console.log(reverse) */
+
+
+/*==================================== Question No 19 =========================================
+anagram
 ======================================= Answer =====================================*/
 
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
+/* function isAnagram(a,b){
+    return a.split('').sort().join() == b.split('').sort().join()
+}
+let ans = isAnagram('eat','ate')
+console.log(ans)
+ */
 
 /*==================================== Question No 1 =========================================
-
+split and join
 ======================================= Answer =====================================*/
+/* let str = 'hello world';
+let spl = str.split(' ');
+let arr = spl.join(' ')
 
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
+console.log(arr)
+ */
 
 
 /*==================================== Question No 1 =========================================
