@@ -379,7 +379,7 @@ let ans = isAnagram('eat','ate')
 console.log(ans)
  */
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 20 =========================================
 split and join
 ======================================= Answer =====================================*/
 /* let str = 'hello world';
@@ -390,210 +390,430 @@ console.log(arr)
  */
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 21 =========================================
+settimeout
+======================================= Answer =====================================*/
+/* console.log('a');
+let ans = setTimeout(() => {
+    console.log('b')
+    
+}, 0);
+clearTimeout(ans)
+console.log('c') */
 
+
+
+
+/*==================================== Question No 22 =========================================
+cleartimeout
+======================================= Answer =====================================*/
+/* let timer;
+
+  function handleClick() {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      console.log("User ne clicking stop kar di");
+    }, 1000);
+  }
+ */
+
+
+
+/*==================================== Question No 23 =========================================
+setInterval
+======================================= Answer =====================================*/
+/* let n = 0;
+let remove = setInterval(() => {
+    n = n + 5;
+    console.log(n)
+}, 2000);
+
+function handleClick(){
+    clearInterval(remove)
+}
+ */
+/* let n = 0;
+let timing = setInterval(() => {
+    n++;
+    console.log(n);
+    if(n == 10){
+        clearInterval(timing)
+    }
+    
+}, 1000);
+ */
+
+/*==================================== Question No 24 =========================================
+letter counter
 ======================================= Answer =====================================*/
 
+/* function counting(){let getWord = document.getElementById('input').value;
+getWord = getWord.toLowerCase();
+    let letter = document.getElementById('requirement').value;
+    letter = letter.toLowerCase();
+    let display = document.getElementById('heading');
+    getWord = getWord.split('');
+    let target = getWord.filter((item)=>{ return item === letter})
+    display.textContent = `${target.length} time`
+}
+ */
+/* function counting(){
+    let getWord = document.getElementById('input').value;
+    getWord = getWord.toLowerCase();
+    let letter = document.getElementById('requirement').value;
+    letter = letter.toLowerCase();
+    let display = document.getElementById('heading');
+    getWord = getWord.split('');
+    console.log(getWord);
+    let target = getWord.filter((item)=>{
+        return item == letter
+    })
+    display.innerHTML = target.length + ' ' + 'times' ;
+} */
+
+    /* function counting(){
+    let getWord = document.getElementById('input').value;
+    getWord = getWord.toLowerCase();
+    let letter = document.getElementById('requirement').value;
+    letter = letter.toLowerCase();
+    let display = document.getElementById('heading');
+    getWord = getWord.split('');
+    let result = 0;
+    for(let i = 0;i < getWord.length;i++){
+       if(getWord[i] == letter){
+        result++;
+       }
+    }
+    display.innerHTML = result + ' ' + 'times'
+}
+ */
+
+/*==================================== Question No 25 =========================================
+img slider
+======================================= Answer =====================================*/
+ /* var init = 0;
+ var images = document.getElementsByTagName('img');
+ console.log(images)
+ for(let i = 0;i < images.length;i++){
+    images[i].style.display = 'none'
+ }
+images[init].style.display = 'block'
+function next() {
+  images[init].style.display = 'none';
+
+  init = init + 1;
+  if (init == images.length) {
+    init = 0;
+  }
+
+  images[init].style.display = 'block';
+}
 
 
+function previous() {
+  images[init].style.display = 'none';
+
+  init = init - 1;
+  if (init < 0) {
+    init = images.length-1;
+  }
+
+  images[init].style.display = 'block';
+}
+ */
+/*==================================== Question No 26 =========================================
+Dom related
+======================================= Answer =====================================*/
+// let li = document.createElement('h1');
+// console.log(li)
+
+// let liContent = document.createTextNode('i am heading');
+// console.log(liContent)
+// li.appendChild(liContent);
+// console.log(li.innerHTML)
+
+// let a = document.getElementsByTagName('li');
+// // console.log(a)
+// let b = '';
+// for(let i = 0;i < a.length;i++){
+//    let m = b +   a[i].innerHTML;
+//    m.style.color = 'red'
+   
+// }
+// console.log(b)
+
+// let div = document.getElementById('parent');
+// console.log(div)
+// console.log(div.children)
+// console.log(div.firstElementChild)
+// console.log(div.lastElementChild)
+// console.log(firstChild)
+
+// let a = document.querySelector('p');
+// console.log(a);
+// let b = document.querySelectorAll('p');
+// console.log(b)
+// for(let i = 0;i < b.length;i++){
+//     console.log(b[i])
+// }
+
+/*==================================== Question No 27 =========================================
+attributes
+======================================= Answer =====================================*/
+/* let at = document.getElementById('img');
+console.log(at.attributes);
+console.log(at.hasAttribute('src'));
+console.log(at.getAttribute('src'));
+ */
 
 
+/*==================================== Question No 28 =========================================
+object.freeze( )
+======================================= Answer =====================================*/
+// /* let obj = {
+//     name : 'Aziz'
+// }
+// Object.freeze(obj)
+// // obj.age = 24
+// obj['age'] = 24;
+// obj['designation'] = 'developer';
+// obj['schoolName'] = 'smit',
 
-/*==================================== Question No 1 =========================================
+// /* delete obj['age'];
+// delete obj['schoolName'];
+//  */
+// console.log(obj.hasOwnProperty('age'))
+// let check = 'designation' in obj
+
+// console.log(Object.keys(obj).length)
+// console.log(obj) */
+/*==================================== Question No 29 =========================================
+previousElementSiblings and nextElementSiblings
 
 ======================================= Answer =====================================*/
+/* let center = document.getElementById('center');
+console.log(center.innerHTML);
+console.log(center.previousElementSibling.innerHTML);
+console.log(center.nextElementSibling.innerHTML)
+ */
 
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 30 =========================================
+enhanceb object literals
+if we are creating object by varibles and varible name and the name of property we are defining in object that we 
+only write property name not write varibale na
 ======================================= Answer =====================================*/
 
+/* `let name = 'Aziz';
+let age = 20;
+let obje = {
+    name : name,
+    age : age
+}
+
+console.log(obje);
+
+let obj = {
+    name,
+    age
+}
+console.log(obj)` */
+/*==================================== Question No 31 =========================================
+Itrator for of/in
+======================================= Answer =====================================*/
+/* let name = ['klsoom','Nasreen','Shiza','sania'];
+for(let item of  name){
+    console.log(item)
+}
+
+for(let index in name){
+    console.log(index)
+} */
+
+
+
+/*==================================== Question No 32 =========================================
+let object destructuring
+======================================= Answer =====================================*/
+/* let obj = {
+    name : 'Aziz',
+    age : 20
+}
+obj['designation'] = 'developer';
+console.log(obj)
+/* console.log(obj['name']);
+console.log(obj.age) */
+
+/* let {name,age,designation} = obj;
+console.log(name);
+console.log(designation) */
 
 
 
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 33 =========================================
+array destructuring
+======================================= Answer =====================================*/
+/* let fruits = ['apple','mango','grapes','banana','orange'];
+/* console.log(fruits[0]);
+console.log(fruits[3]);
+ */
+/* let [one,two,three,four,five] = fruits;
+console.log(one);
+console.log(five)
+ */ 
+
+/*==================================== Question No 34 =========================================
+spread operator is a js feature use for 
+merge two or more object or array 
+copy object or array 
+add data to an array or object 
+======================================= Answer =====================================*/
+/* et one = ['apple','banana'];
+let two = ['grapes'];
+// let merging = one.concat(two);
+let merging = [...one,...two]
+console.log(merging)
+
+let newArray = [...merging,'orange','dates','guava'];
+console.log(newArray);
+console.log(...newArray) */
+
+
+
+/*==================================== Question No 35 =========================================
+spread operator for object 
+merge 
+copy 
+add data 
+spread object
+======================================= Answer =====================================*/
+/* let one = {
+    name : 'Aziz'
+}
+let two = {
+    age : 'developer'
+}
+let merge = {...one,...two }
+// let combine = one.concat(two)
+console.log(merge)
+// console.log(combine)
+
+// add data 
+let newObject = {...merge,desigination : 'developer',city:'Karachi'};
+console.log(newObject)
+
+// copy 
+let ob = {...newObject};
+console.log(ob)
+let spre = {...ob};
+console.log(spre)
+
+let user = {
+    name : 'aziz'
+
+}
+console.log(`user `,user);
+let newobject = {
+    ...user,
+    age : 23
+}
+console.log(newObject) */
+
+/* let user = {
+    name : 'Aziz'
+}
+let newobject = {
+    ...user,
+    age : 30
+};
+console.log(newobject)
+let obj = {
+    ...newobject,
+    city: 'karachi'
+}
+console.log(obj) */
+/*==================================== Question No 36 =========================================
+deep copy;
+if we have an object and iside object we have nested object and 
+we copy obj and we create any change in nested object than it always changes in copy not in origional objec like
+shallow copy
+======================================= Answer =====================================*/
+/* const obj = {
+    name : 'Aziz',
+    info : {
+        age : 30
+    }
+}
+console.log(`origional object `,obj)
+const copyobj = JSON.parse(JSON.stringify(obj));
+copyobj.info.age = 40;
+copyobj['info']['designation'] = 'developer'
+
+console.log(copyobj) */
+
+/*==================================== Question No 37 =========================================
+shallow copy of object 
+if we have an object and a nested object and we copy object and 
+in copy we create any modification than it modification is applied also on  origional 
+object, it is  called shallow copy of object 
 
 ======================================= Answer =====================================*/
+/* let details = {
+    name : 'Aziz',
+    age : 22,
+    infor : {
+        city : 'Karachi'
+    }
+}
+console.log(details);
+
+let copy = {
+    ...details
+}
+copy.infor.city = 'Lahore';
+copy.infor.district = 'Kohat'
+console.log('copy ', copy) */
+
+
+
+/*==================================== Question No 38 =========================================
+callback function 
+the function that is passed in another functions's  as an argument is called 
+call back funciton
+======================================= Answer =====================================*/
+/* function cb(){
+    console.log('i am call back function')
+}
+
+function main(callback){
+    console.log('i am main function');
+    callback();
+}
+main(cb) */
 
 
 
 
-
-
-
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 39 =========================================
 
 ======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================
-
-==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================*/
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
+/* function a(){
+    console.log('i am argument funciotn')
+}
+
+function main(callback){
+    callback();
+    return function(){
+        console.log('i am higher order function i am returning a  function also')
+    }
+
+}
+
+let ans = main(a)
+ans()
+ */
 
 /*==================================== Question No 1 =========================================
 
