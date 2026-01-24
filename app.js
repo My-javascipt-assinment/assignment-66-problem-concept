@@ -797,7 +797,7 @@ main(cb) */
 
 
 /*==================================== Question No 39 =========================================
-
+higher order function
 ======================================= Answer =====================================*/
 /* function a(){
     console.log('i am argument funciotn')
@@ -815,48 +815,175 @@ let ans = main(a)
 ans()
  */
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 40 =========================================
+closure funtion
 ======================================= Answer =====================================*/
+/* function parent(m){
+    let n = 20;
+    return function(){
+        console.log(m+n)
+    }
+
+}
+let ans = parent(10);
+ans()
+ */
 
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 41 =========================================
+closure function example
 ======================================= Answer =====================================*/
+/* let heading = document.getElementById('heading')
+function a(){
+    let count = 0;
+    return function(){
+        count++;
+    //    return count;
+    
+return heading.innerHTML = count
+    }
+}
+let ans = a() */
+/* let ans = a()
+console.log(ans()) */
+
+
+/* let heading = document.getElementById('heading');
+
+  function a() {
+    let count = 0; // private variable (closure)
+    return function() {
+      count++;
+      heading.innerHTML = count;
+    }
+  }
+
+  // Create closure and assign to global variable so HTML can access it
+  let counter = a(); */
 
 
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 42 =========================================
+try catch
 ======================================= Answer =====================================*/
+/* try{let num = 5;
+let ans = num.toUpperCase();
+console.log(ans);}
+catch(error){
+    console.log(error)
+}
+console.log(2 + 5) */
 
 
 
 
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 43 =========================================
+filter
 ======================================= Answer =====================================*/
+// const fruits  = ['apple','banana','mango','banana','grapes','banana','guava']
+/* let filter = fruits.filter((item,index)=>{
+    return( item == 'banana'
+       
+    )
+})
+console.log(filter) */
+
+// by for loop 
+/* let arr = [];
+for(let i = 0;i < fruits.length;i++){
+    // console.log(fruits[i])
+    if(fruits[i] === 'banana'){
+        arr.push(fruits[i]);
+        
+    }
+    else{
+        console.log('no item found')
+    }
+}
+console.log(arr) */
 
 
+// example two with object 
 
+/* const user  = [
+    {id : 1,
+        name : 'ahmed',
+        title : 'Mern Eng'
+    },
+    {id : 2,
+        name : 'Obaid',
+        title : 'Admin Exec'
+    },
 
+    {id : 3,
+        name : 'Aizaz',
+        title : 'Ui ux designer'
+    },
 
-/*==================================== Question No 1 =========================================
+    {id : 4,
+        name : 'Bilal',
+        title : 'Mern Eng'
+    }
+]
+ */
+/* let ans = user.filter((item)=>{
+    return(item.title === 'Mern Eng')
+})
+console.log(ans) */
 
+// by for loop 
+
+/* let obj = []
+ for(let i = 0; i < user.length;i++){
+    // console.log(user[i])
+    if(user[i].title == 'Mern Eng'){
+        obj.push(user[i])
+    }
+ }
+ console.log(obj) */
+/*==================================== Question No 44 =========================================
+find
 ======================================= Answer =====================================*/
+/* const fruits = ['apple','mango','orange','mango','grapes','banana','mango'];
+let ans = fruits.find((item)=>{
+    return(item == 'mango')
+})
+console.log(ans)
+ */
 
 
+const user  = [
+    {id : 1,
+        name : 'ahmed',
+        title : 'Mern Eng'
+    },
+    {id : 2,
+        name : 'Obaid',
+        title : 'Admin Exec'
+    },
+
+    {id : 3,
+        name : 'Aizaz',
+        title : 'Ui ux designer'
+    },
+
+    {id : 4,
+        name : 'Bilal',
+        title : 'Mern Eng'
+    }
+]
 
 
+let arr = [];
+for(let item of user){
+    if(item.title === 'Mern Eng'){
+        arr.push(item);
+        break;
+    }
+}
+console.log(arr)
 
 /*==================================== Question No 1 =========================================
 https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
