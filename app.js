@@ -954,7 +954,7 @@ console.log(ans)
  */
 
 
-const user  = [
+/* const user  = [
     {id : 1,
         name : 'ahmed',
         title : 'Mern Eng'
@@ -983,60 +983,159 @@ for(let item of user){
         break;
     }
 }
-console.log(arr)
+console.log(arr) */
 
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================*//*==================================== Question No 1 =========================================
-
+/*==================================== Question No 42 =========================================
+forEach( )
 ======================================= Answer =====================================*/
+/* let prices = [100, 200, 300];
+let ans = [];
+prices.forEach((item)=>{
+ans.push(item + 10)
+})
+console.log(ans) */
+
+/* let fruits = ['apple','mango','grapes','guava'];
+let display = document.getElementById('list');
+fruits.forEach((item)=>{
+    display.innerHTML += `<li>${item}</li>`
+}) */
 
 
 
-
-
-/*==================================== Question No 1 =========================================
-
+   /*  const users = [
+  { name: "Ali", age: 22 },
+  { name: "Ahmed", age: 25 },
+  { name: "Sara", age: 20 }
+];
+let display = document.getElementById('list')
+users.forEach((item)=>{
+    display.innerHTML = display.innerHTML + `${item.name}  ${item.age}<br/><br/>`
+}) */
+/*==================================== Question No 43 =========================================
+map( ) array method
 ======================================= Answer =====================================*/
+/* const arr = [1,2,3,4,5];
+let newArray = arr.map((item)=>{
+    return(
+        item*100)
+})
 
+console.log(newArray)
+ */
 
+/* const students = [
+  { name: "Ali", marks: 80 },
+  { name: "Ahmed", marks: 45 }
+];
 
+const result = students.map(student => {
+  return {
+    ...student,
+    status: student.marks >= 50 ? "Pass" : "Fail"
+  };
+});
 
+console.log(result); */
 
-/*==================================== Question No 1 =========================================
+/* const students = [
+  { name: "Ali", marks: 80 },
+  { name: "Ahmed", marks: 45 }
+];
 
+const result = students.map((student)=>{
+    return{
+        ...student,
+        status : student.marks >=50 ?'pass':'fail'
+    }
+        
+    
+})
+console.log(result)
+ */
+/*==================================== Question No 44 =========================================
+switch statement
 ======================================= Answer =====================================*/
+/* let day = 1;
+switch(day){
+    case(1) : console.log('Sunday')
+    break;
+    case(2) : console.log('Monday')
+    break;
+    case(3) : console.log('Tuesday')
+    break;
+    default :console.log('enter valid')
+
+} */
 
 
 
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 45 =========================================
+some( )
 ======================================= Answer =====================================*/
+/* let num = [1,21,3,41,7,9,11];
+let ans =num.some((item)=>{
+    return(item % 2 == 0)
+})
+console.log(ans)
+ */
 
 
 
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 46 =========================================
+findIndex
 ======================================= Answer =====================================*/
+  /* const user = [{id : 1,
+   name : 'Ahmed',
+   title : 'MERN Eng'
+},
+{id : 2,
+   name : 'Obaind',
+   title : 'Ui Ux Des'
+},
+{id : 3, 
+   name : 'Aziz',
+   title : 'Admin'
+},
+{id : 4,
+   name : 'Bilal',
+   title : 'MERN Eng'
+}]
+const targetEl = user.findIndex((element)=>{return element.id == 3})
+console.log(targetEl);
+user.splice(targetEl,1);
+console.log(user) */
 
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
+            
+  /* const user = [{id : 1,
+   name : 'Ahmed',
+   title : 'MERN Eng'
+},
+{id : 2,
+   name : 'Obaind',
+   title : 'Ui Ux Des'
+},
+{id : 3, 
+   name : 'Aziz',
+   title : 'Admin'
+},
+{id : 4,
+   name : 'Bilal',
+   title : 'MERN Eng'
+}];
+console.log(user)
+let result = null;
+for(let item of user){
+    if(item.id == 3){
+        result = item.id;
+        break;
+        
+    }
+}
+console.log(result)
+user.splice(result,1)
+console.log(user) */
 /*==================================== Question No 1 =========================================
 
 ======================================= Answer =====================================*/
